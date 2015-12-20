@@ -37,9 +37,9 @@ Executable template
 
     snaplet-postgresql-simple,
     postgresql-simple,
-    heist-splices,
+--    heist-splices,
     vector,
-    postgresql-simple-tuple,
+--    postgresql-simple-tuple,
 --    template-haskell,
     digestive-functors-snap,
     digestive-functors-heist,

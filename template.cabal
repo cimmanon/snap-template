@@ -37,18 +37,17 @@ Executable template
 
     snaplet-postgresql-simple,
     postgresql-simple,
---    heist-splices,
-    vector,
---    postgresql-simple-tuple,
---    template-haskell,
     digestive-functors-snap,
     digestive-functors-heist,
     digestive-functors,
+--    vector,
+--    snap-extras,
+--    heist-splices,
+--    postgresql-simple-tuple,
+--    template-haskell,
 --    blaze-builder,
-    safe,
+    safe
 --    transformers,
-    snap-extras
---    MonadCatchIO-transformers,
 --    smtp-mail,
 --    digestive-functors-aeson,
 --    aeson

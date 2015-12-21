@@ -23,14 +23,14 @@ import Snap.Snaplet.PostgresqlSimple
 ------------------------------------------------------------------------------
 import           Application
 
+import Snap.Handlers
 
 ------------------------------------------------------------------------------
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
 routes =
-		[ ("", serveDirectory "static")
-		]
-
+	[ ("", serveDirectory "static")
+	]
 
 ------------------------------------------------------------------------------
 -- | The application initializer.

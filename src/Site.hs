@@ -38,16 +38,16 @@ app :: SnapletInit App App
 app = makeSnaplet "app" "An snaplet example application." Nothing $ do
 	h <- nestSnaplet "" heist $ heistInit "templates"
 	s <- nestSnaplet "sess" sess $
-				 initCookieSessionManager "site_key.txt" "sess" (Just 3600)
+		initCookieSessionManager "site_key.txt" "sess" (Just 3600)
 
 	d <- nestSnaplet "db" db pgsInit
 
 	addRoutes routes
 
---	wrapSite (<|> notFound)
+	wrapSite (<|> notFound)
 
 	-- only display a pretty error if we are not in development mode
---	getEnvironment >>= (\e -> when (e /= "devel") $ wrapSite internalServerError)
+	initPrettyProductionErrors
 
 --	initFlashNotice h sess
 --	addConfig h $ mempty & scInterpretedSplices .~ userSessionSplices sess

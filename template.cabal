@@ -42,6 +42,7 @@ Executable template
     digestive-functors,
 --    vector,
 --    snap-extras,
+    snap-handlers,
 --    heist-splices,
 --    postgresql-simple-tuple,
 --    template-haskell,
